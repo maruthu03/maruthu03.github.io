@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruthu Education Centre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #passcodeForm {
+            margin-bottom: 20px;
+        }
+
+        #passcode {
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Maruthu Education Centre</h1>
+    <form id="passcodeForm">
+        <label for="passcode">Enter Passcode:</label>
+        <input type="password" id="passcode" name="passcode" required>
+        <button type="button" onclick="checkPasscode()">Submit</button>
+    </form>
+</div>
+
+<script>
+    function checkPasscode() {
+        var enteredPasscode = document.getElementById("passcode").value;
+
+        if (enteredPasscode === "1819") {
+            // Correct passcode
+            window.location.href = "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/maruthu03/maruthu03.github.io/8c4ba9782a3fc4aa8b040d13f650c695b687c515/Banking%20Question%201.pdf&embedded=true";
+        } else {
+            // Incorrect passcode
+            alert("Incorrect passcode. Please try again.");
+        }
+    }
+</script>
+
+</body>
+</html>
